@@ -4,6 +4,13 @@ var mysql = require('./mysql');
 exports.getProduct=getProduct;
 exports.getProductByQrCode=getProductByQrCode;
 exports.getAllProduct=getAllProduct;
+exports.singleProduct=singleProduct;
+
+
+
+function singleProduct(req,res) {
+	res.render("single-product");
+}
 
 function getProduct(req,res) {
 

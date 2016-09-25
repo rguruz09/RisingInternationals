@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Turqouise Earrings</title>
+    <title>Cart Page</title>
     
     <!-- PLUGINS CSS STYLE -->
     <link href="plugins/jquery-ui/jquery-ui.css" rel="stylesheet">
@@ -30,15 +30,6 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-route.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-  
-  <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
-    <script src="/css/c3.js"></script>
-
-       <script type="text/javascript" src="angularjs/mainCtrl.js"> </script>
   </head>
 
   <body>
@@ -53,15 +44,15 @@
           <div class="container">
             <div class="row">
               <div class="col-md-6 hidden-sm hidden-xs">
-<!--
                 <ul class="list-inline">
+<!--
                   <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                   <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                   <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
                   <li><a href="#"><i class="fa fa-vimeo"></i></a></li>
                   <li><a href="#"><i class="fa fa-tumblr"></i></a></li>
-                </ul>
 -->
+                </ul>
               </div>
               <div class="col-md-6 col-xs-12">
                 <ul class="list-inline pull-right">
@@ -81,8 +72,8 @@
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-shopping-cart"></i>$0</a>
                     <ul class="dropdown-menu dropdown-menu-right">
                       <li>Item(s) in your cart</li>
-<!--
                       <li>
+<!--
                         <a href="#">
                           <div class="media">
                             <img class="media-left media-object" src="img/home/cart-items/cart-item-01.jpg" alt="cart-Image">
@@ -91,10 +82,10 @@
                             </div>
                           </div>
                         </a>
-                      </li>
 -->
-<!--
+                      </li>
                       <li>
+<!--
                         <a href="#">
                           <div class="media">
                             <img class="media-left media-object" src="img/home/cart-items/cart-item-01.jpg" alt="cart-Image">
@@ -103,8 +94,8 @@
                             </div>
                           </div>
                         </a>
-                      </li>
 -->
+                      </li>
                       <li>
                         <div class="btn-group" role="group" aria-label="...">
                           <button type="button" class="btn btn-default">Shopping Cart</button>
@@ -130,7 +121,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="\"><img src="img/logo.png" alt=""></a>
+              <a class="navbar-brand" href="\"><img src="img/logo.jpg" alt=""></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -142,19 +133,19 @@
                   <ul class="dropdown-menu row">
                     <li class="col-sm-3 col-xs-12">
                       <ul class="list-unstyled">
-                        <li>Products Grid View</li>
-                        <li><a href="product-grid-left-sidebar.html">Accessories</a></li>
+                        <li>Products</li>
+                        <li class="active"><a href="product-grid-left-sidebar.html">Accessories</a></li>
                         <li><a href="product-grid-right-sidebar.html">Apparel</a></li>
                         <li><a href="product-grid-3-col-filter.html">Kids</a></li>
                         <li><a href="product-grid-3-col.html">Houseware</a></li>
                         <li><a href="product-grid-4-col.html">Jewelry</a></li>
-                        <li><a href="product-grid-4-col.html">Pets</a></li>
+                         <li><a href="product-grid-4-col.html">Pets</a></li> 
                       </ul>
                     </li>
                     <li class="col-sm-3 col-xs-12">
                       <ul class="list-unstyled">
                         <li>Featured Products</li>
-                       <li><a href="product-list-left-sidebar.html">Peninah Wrap Bracelet</a></li>
+                        <li><a href="product-list-left-sidebar.html">Peninah Wrap Bracelet</a></li>
                         <li><a href="product-list-right-sidebar.html">Stella Bag</a></li>
                         <li><a href="product-list-right-sidebar.html">Heart Bag</a></li>
                         <li><a href="single-product.html">Gathering Basket</a></li>
@@ -225,224 +216,107 @@
       </div>
       
       <!-- LIGHT SECTION -->
-      <section class="lightSection clearfix pageHeader">
+      <section class="lightSection clearfix pageHeaderImage">
         <div class="container">
-          <div class="row">
-            <div class="col-xs-6">
-              <div class="page-title">
-                <h2>Accessories</h2>
+          <div class="tableBlock">
+            <div class="row tableInner">
+              <div class="col-xs-12">
+                <div class="page-title">
+                  <h2>cart</h2>
+                  <ol class="breadcrumb">
+                    <li>
+                      <a href="\">Home</a>
+                    </li>
+                    <li class="active">cart</li>
+                  </ol>
+                </div>
               </div>
-            </div>
-            <div class="col-xs-6">
-              <ol class="breadcrumb pull-right">
-                <li>
-                  <a href="\">Home</a>
-                </li>
-                <li>
-                  <a href="product-grid-left-sidebar.html">Accessories</a>
-                </li>  
-                <li class="active">Stella Bag</li>
-              </ol>
             </div>
           </div>
         </div>
       </section>
       
       <!-- MAIN CONTENT SECTION -->
-      <section class="mainContent clearfix">
+      <section class="mainContent clearfix cartListWrapper">
         <div class="container">
-          <div class="row singleProduct">
+          <div class="row">
             <div class="col-xs-12">
-              <div class="media">
-                <div class="media-left productSlider">
-                  <div id="carousel" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                      <div class="item active" data-thumb="0">
-                        <img src="http://pad2.whstatic.com/images/thumb/f/f1/Make-Personality-Enhancing-Handmade-Accessories-Step-5.jpg/aid1362917-703px-Make-Personality-Enhancing-Handmade-Accessories-Step-5.jpg" width="300px" height="350px">
-                      </div>
-                      <!-- <div class="item" data-thumb="1">
-                        <img src="img/products/bag2.png" width="300px" height="350px">
-                      </div>
-                      <div class="item" data-thumb="2">
-                        <img src="img/products/bag3.png" width="300px" height="350px">
-                      </div>
-                      <div class="item" data-thumb="3">
-                        <img src="img/products/bag4.png" width="300px" height="350px">
-                      </div> -->
-                    </div>
-                  </div> 
-                  <div class="clearfix">
-                    <div id="thumbcarousel" class="carousel slide" data-interval="false">
-                      <div class="carousel-inner">
-                          <div data-target="#carousel" data-slide-to="0" class="thumb"><img src="img/products/bag1.png" width="250px" height="100px"></div>
-                          <div data-target="#carousel" data-slide-to="1" class="thumb"><img src="img/products/bag2.png" width="250px" height="100px"></div>
-                          <div data-target="#carousel" data-slide-to="2" class="thumb"><img src="img/products/bag3.png" width="250px" height="100px"></div>
-                          <div data-target="#carousel" data-slide-to="3" class="thumb"><img src="img/products/bag4.png" width="250px" height="100px"></div>
-                      </div>
-                      <a class="left carousel-control" href="#thumbcarousel" role="button" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left"></span>
-                      </a>
-                      <a class="right carousel-control" href="#thumbcarousel" role="button" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right"></span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="media-body">
-                  <ul class="list-inline">
-                    <li><a href="\"><i class="fa fa-reply" aria-hidden="true"></i>Continue Shopping</a></li>
-                    <li><a href="#"><i class="fa fa-plus" aria-hidden="true"></i>Share This</a></li>
-                  </ul>
-                  <h2>TURQOUISE EARRINGS</h2>
-                  <h3>$45</h3>
-                  <p>Crocheted at her home in a very low income suburb of Harare using upcycled plastic bags that litter her city. The bags are washed and melted to make new plastic. By purchasing this bag, you’re helping her clean up her community, and earn vital income to purchase life-saving medicine.</p>
-                   
-                  <span class="quick-drop">
-                    <select name="guiest_id3" id="guiest_id3" class="select-drop">
-                      <option value="0">Size</option>
-                      <option value="1">Small</option>
-                      <option value="2">Medium</option>
-                      <option value="3">Big</option>            
-                    </select>
-                  </span>
-                  <span class="quick-drop resizeWidth">
-                    <select name="guiest_id4" id="guiest_id4" class="select-drop">
-                      <option value="0">Qty</option>
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>            
-                    </select>
-                  </span>
-                  <div class="btn-area">
-                    <a href="/cart_page" class="btn btn-primary btn-block">Add to cart <i class="fa fa-angle-right" aria-hidden="true"></i></a> 
-                  </div>
-                  <div class="tabArea">
-                    <ul class="nav nav-tabs">
-                      <li class="active"><a data-toggle="tab" href="#details">Seller</a></li>
-                      <li><a data-toggle="tab" href="#about-art">Artisan</a></li>
-                      <li><a data-toggle="tab" href="#sizing">Story</a></li>
-<!--                      <li><a data-toggle="tab" href="#shipping">Timeline</a></li>-->
-                    </ul>
-                      
-                     
-                      
-                    <div class="tab-content">
-                      <div id="details" class="tab-pane fade in active">
+              <div class="cartListInner">
+                <form action="#">
+                  <div class="table-responsive">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th></th>
+                          <th>Product Name</th>
+                          <th>Price</th>
+                          <th>Quantity</th>
+                          <th>Sub Total</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+
+                        <tr>
+                          <td class="col-xs-2">
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <span class="cartImage"><img src="http://pad2.whstatic.com/images/thumb/f/f1/Make-Personality-Enhancing-Handmade-Accessories-Step-5.jpg/aid1362917-703px-Make-Personality-Enhancing-Handmade-Accessories-Step-5.jpg" alt="image" height="50px" width="50px"></span>
+                          </td>
+                          <td class="col-xs-4">Turqouise earrings</td>
+                          <td class="col-xs-2">$ 45.00</td>
+                          <td class="col-xs-2"><input type="text" placeholder="2"></td>
+                          <td class="col-xs-2">$ 90.00</td>
+                        </tr>
 
 <!--
-                        <ul class="list-unstyled">
-                          <li>Color: Blue</li>
-                          <li>Lined with Strap Material</li>
-                          <li>Zippered Closure</li>
-                          
-                        </ul>
+                        <tr>
+                          <td class="col-xs-2">
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <span class="cartImage"><img src="img/products/cart-image.jpg" alt="image"></span>
+                          </td>
+                          <td class="col-xs-4">Italian Winter Hat</td>
+                          <td class="col-xs-2">$ 99.00</td>
+                          <td class="col-xs-2"><input type="text" placeholder="1"></td>
+                          <td class="col-xs-2">$ 99.00</td>
+                        </tr>
 -->
-                         <img src="http://malungon.net/hr/pdspics/pictures/08(24).jpg" width="200px" height="200px">
-                         <div id="dec">
-                         Priyanka's Lifestory: My parents were cruel enough to use my physical strength and use me as a way for them to make money. This was really not acceptable to any woman and I demanded freedom from this. Rising International provided me a way to channel to use my skills as a vantage point to earn a living for myself.
-                         Priyanka's dream: I want to educate herself and use my education to the betterment of women in shelter homes.
-                        </div> 
-                          
-                      </div>
-                      <div id="about-art" class="tab-pane fade">
-                        <p>
-                        This product is made in Uganda by Internally Displaced Persons (IDPs), widows, and people living with HIV and AIDS. Women in Uganda are rising above their circumstances by earning $120 per month. This purchase will help IDPs get 12% increase in their income.
-                        </p>
-                      </div>
-                      <div id="sizing" class="tab-pane fade">
-                        <video width="520" height="300" controls>
-  <source src="img/Rising_International.mp4" type="video/mp4">
-<!--  <source src="movie.ogg" type="video/ogg">-->
-Your browser does not support the video tag.
-</video>  
-                      </div>
 <!--
-                      <div id="shipping" class="tab-pane fade">
-                        <p>Mauris lobortis augue ex, ut faucibus nisi mollis ac. Sed volutpat scelerisque ex ut ullamcorper. Cras at velit quis sapien dapibus laoreet a id odio. Sed sit amet accumsan ante, eu congue metus. Aenean eros tortor, cursus quis feugiat sed, vestibulum vel purus.</p>
-                      </div>
+                        <tr>
+                          <td class="col-xs-2">
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <span class="cartImage"><img src="img/products/cart-image.jpg" alt="image"></span>
+                          </td>
+                          <td class="col-xs-4">Italian Winter Hat</td>
+                          <td class="col-xs-2">$ 99.00</td>
+                          <td class="col-xs-2"><input type="text" placeholder="1"></td>
+                          <td class="col-xs-2">$ 99.00</td>
+                        </tr>
 -->
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="updateArea">
+                    <div class="input-group">
+<!--
+                      <input type="text" class="form-control" placeholder="I have a discount coupon" aria-describedby="basic-addon2">
+                      <a href="#" class="btn input-group-addon" id="basic-addon2">apply coupon</a>
+-->
+                        
+                    </div>
+                    <a href="#" class="btn">update cart</a>
+                  </div>
+                  <div class="row totalAmountArea">
+                    <div class="col-sm-4 col-sm-offset-8 col-xs-12">
+                      <ul class="list-unstyled">
+                        <li>Sub Total <span>$ 90.00</span></li>
+                        <li>US Vat <span>$ 12.00</span></li>
+                        <li>Grand Total <span class="grandTotal">$ 102.00</span></li>
+                      </ul>
                     </div>
                   </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row productsContent">
-            <div class="col-xs-12">
-              <div class="page-header">
-                <h4>Related Products</h4>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-6 col-xs-12">
-              <div class="productBox">
-                <div class="productImage clearfix">
-                  <img src="http://www.home-dzine.co.za/2013/dec/1124.jpg" width="300px" height="300px" alt="products-img">
-                  <div class="productMasking">
-                    <ul class="list-inline btn-group" role="group">
-                      <li><a data-toggle="modal" href=".login-modal" class="btn btn-default"><i class="fa fa-heart"></i></a></li>
-                      <li><a href="cart-page.html" class="btn btn-default"><i class="fa fa-shopping-cart"></i></a></li>
-                      <li><a class="btn btn-default" data-toggle="modal" href=".quick-view" ><i class="fa fa-eye"></i></a></li>
-                    </ul>
+                  <div class="checkBtnArea">
+                    <a href="checkout-step-1.html" class="btn btn-primary btn-block">checkout<i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
                   </div>
-                </div>
-                <div class="productCaption clearfix">
-                 <h5>Basket Gathering</h5>
-                 <h3>$199</h3>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-6 col-xs-12">
-              <div class="productBox">
-                <div class="productImage clearfix">
-                  <img src="http://www.cqtrading.com/wp-content/uploads/2016/06/DSCN3970-300x300.png" width="300px" height="300px" alt="products-img">
-                  <div class="productMasking">
-                    <ul class="list-inline btn-group" role="group">
-                      <li><a data-toggle="modal" href=".login-modal" class="btn btn-default"><i class="fa fa-heart"></i></a></li>
-                      <li><a href="cart-page.html" class="btn btn-default"><i class="fa fa-shopping-cart"></i></a></li>
-                      <li><a class="btn btn-default" data-toggle="modal" href=".quick-view" ><i class="fa fa-eye"></i></a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="productCaption clearfix">
-                 <h5>Multicolored Jute Mat</h5>
-                 <h3>$249</h3>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-6 col-xs-12">
-              <div class="productBox">
-                <div class="productImage clearfix">
-                  <img src="http://static.brit.co.s3.amazonaws.com/wp-content/uploads/2013/10/8-Rainbow.jpg" width="300px" height="300px" alt="products-img">
-                  <div class="productMasking">
-                    <ul class="list-inline btn-group" role="group">
-                      <li><a data-toggle="modal" href=".login-modal" class="btn btn-default"><i class="fa fa-heart"></i></a></li>
-                      <li><a href="cart-page.html" class="btn btn-default"><i class="fa fa-shopping-cart"></i></a></li>
-                      <li><a class="btn btn-default" data-toggle="modal" href=".quick-view" ><i class="fa fa-eye"></i></a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="productCaption clearfix">
-                 <h5>Rainbow Collar Belt</h5>
-                 <h3>$179</h3>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-6 col-xs-12">
-              <div class="productBox">
-                <div class="productImage clearfix">
-                  <img src="img/products/acc2.jpg" width="300px" height="300px" alt="products-img">
-                  <div class="productMasking">
-                    <ul class="list-inline btn-group" role="group">
-                      <li><a data-toggle="modal" href=".login-modal" class="btn btn-default"><i class="fa fa-heart"></i></a></li>
-                      <li><a href="cart-page.html" class="btn btn-default"><i class="fa fa-shopping-cart"></i></a></li>
-                      <li><a class="btn btn-default" data-toggle="modal" href=".quick-view" ><i class="fa fa-eye"></i></a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="productCaption clearfix">
-                 <h5>Rockstar Purse</h5>
-                 <h3>$449</h3>
-                </div>
+                </form>
               </div>
             </div>
           </div>
@@ -468,8 +342,8 @@ Your browser does not support the video tag.
               </div>
             </div>
 -->
-            <div class="col-sm-2 col-xs-12">
 <!--
+            <div class="col-sm-2 col-xs-12">
               <div class="footerLink">
                 <h5>BRANDS</h5>
                 <ul class="list-unstyled">
@@ -479,10 +353,10 @@ Your browser does not support the video tag.
                   <li><a href="#">Belstaff</a></li>
                 </ul>
               </div>
--->
             </div>
-            <div class="col-sm-2 col-xs-12">
+-->
 <!--
+            <div class="col-sm-2 col-xs-12">
               <div class="footerLink">
                 <h5>Accessories</h5>
                 <ul class="list-unstyled">
@@ -494,8 +368,8 @@ Your browser does not support the video tag.
                   <li><a href="#">Toilette </a></li>
                 </ul>
               </div>
--->
             </div>
+-->
             <div class="col-sm-2 col-xs-12">
               <div class="footerLink">
                 <h5>Get in Touch</h5>
@@ -519,7 +393,6 @@ Your browser does not support the video tag.
           </div>
         </div>
       </div>
-
       <!-- COPY RIGHT -->
       <div class="copyRight clearfix">
         <div class="container">
@@ -544,7 +417,7 @@ Your browser does not support the video tag.
     </div>
     
     <!-- LOGIN MODAL -->
-    <div class="modal fade login-modal" id="login" tabindex="-1" role="dialog">
+    <div class="modal fade" id="login" tabindex="-1" role="dialog">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
@@ -603,48 +476,6 @@ Your browser does not support the video tag.
       </div>
     </div>
 
-    <!-- PORDUCT QUICK VIEW MODAL -->
-<!--
-    <div class="modal fade quick-view" tabindex="-1" role="dialog">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-body">
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-            <div class="media">
-              <div class="media-left">
-                <img class="media-object" src="img/products/quick-view/quick-view-01.jpg" alt="Image">
-              </div>
-              <div class="media-body">
-                <h2>Old Skool Navy</h2>
-                <h3>$149</h3>
-                <p>Classic sneaker from Vans. Cotton canvas and suede upper. Textile lining with heel stabilizer and ankle support. Contrasting laces. Sits on a classic waffle rubber sole.</p>
-                <span class="quick-drop">
-                  <select name="guiest_id3" id="guiest_id3" class="select-drop">
-                    <option value="0">Size</option>
-                    <option value="1">Size 1</option>
-                    <option value="2">Size 2</option>
-                    <option value="3">Size 3</option>            
-                  </select>
-                </span>
-                <span class="quick-drop resizeWidth">
-                  <select name="guiest_id4" id="guiest_id4" class="select-drop">
-                    <option value="0">Qty</option>
-                    <option value="1">Qty 1</option>
-                    <option value="2">Qty 2</option>
-                    <option value="3">Qty 3</option>            
-                  </select>
-                </span>
-                <div class="btn-area">
-                  <a href="#" class="btn btn-primary btn-block">Add to cart <i class="fa fa-angle-right" aria-hidden="true"></i></a> 
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
--->
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="plugins/jquery-ui/jquery-ui.js"></script>
     <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
@@ -654,5 +485,6 @@ Your browser does not support the video tag.
     <script src="plugins/selectbox/jquery.selectbox-0.1.3.min.js"></script>
     <script src="plugins/countdown/jquery.syotimer.js"></script>
     <script src="js/custom.js"></script>
+
   </body>
 </html>

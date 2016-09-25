@@ -6,13 +6,21 @@ var risingInternational= angular.module('risingInternational',[]);
 risingInternational.controller('mainPageCtrl', function($scope, $http, $location) {
 	 
 	$scope.category = 0;
-	$scope.product = [];
-	$scope.prod1 = 0;
+	$scope.product = [] ;
+	//$scope.prod1;
+
+	$scope.cart_page = function(){
+		console.log("cart page");
+		window.location.assign('/cart_page');
+	}
 
 	$scope.singleProductPage = function(){
 
 		//$scope.prodid = prod;
-		window.location.assign("/single-product");
+		
+		console.log($scope.prod1);
+
+		window.location.assign("/singleProduct");
 	}
 
 	$scope.getProductList = function(){
@@ -25,13 +33,17 @@ risingInternational.controller('mainPageCtrl', function($scope, $http, $location
 
 		if(result.stscode == 200){
 
-			var products = result.data;
+			products = result.data;
 			console.log(products);
 				for(var i=0; i<products.length;i++){
 					$scope.product.push(products[i].productname+";"+products[i].amount+";"+products[i].profilepic+";"+products[i].productdesc+
-						";"+products[i].pid+";"+products[i].cid);	
+					";"+products[i].pid+";"+products[i].cid);	
 					//$scope.productAmount.push(products[i].amount);	
-					console.log($scope.product);
+
+					// $scope.product[i].productname = products[i].productname;
+					// $scope.product[i].prodamount = products[i].amount;
+					// $scope.product[i].prodimg = products[i].profilepic;
+					// console.log($scope.product);
 					
 				}
 				
@@ -376,10 +388,7 @@ risingInternational.controller('mainPageCtrl', function($scope, $http, $location
 
 			});
 		    } 
-			
-			makeChart('#d1-c5', 'bar', ['#3498db', '#2980b9'], false);
 		
-	
 	
  });
 

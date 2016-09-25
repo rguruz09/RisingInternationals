@@ -3,7 +3,12 @@ var mysql = require('./mysql');
 
 exports.getOrdersBySeller=getOrdersBySeller;
 exports.getAmountBySeller=getAmountBySeller;
+exports.cart_page=cart_page;
 
+
+function cart_page(req,res){
+	res.render('cart-page.ejs');
+}
 
 function getOrdersBySeller(req,res) {
 

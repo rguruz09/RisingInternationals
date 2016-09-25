@@ -11,10 +11,16 @@ exports.accomplishments= accomplishments;
 exports.leads= leads;
 exports.product_grid_left_sidebar = product_grid_left_sidebar;
 exports.aboutus= aboutus;
+exports.cart_page= cart_page;
 
 function product_grid_left_sidebar(req,res) {
 	res.render("product-grid-left-sidebar");
 }
+
+function cart_page(req,res) {
+	res.render("cart_page");
+}
+
 
 function dashboard(req,res) {
 	res.render("account-dashboard");

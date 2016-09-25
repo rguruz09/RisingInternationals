@@ -15,6 +15,16 @@
     <link href="plugins/selectbox/select_option1.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="plugins/rs-plugin/css/settings.css" media="screen">
     <link rel="stylesheet" type="text/css" href="plugins/owl-carousel/owl.carousel.css" media="screen">
+    
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-route.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	
+	<script src="http://d3js.org/d3.v3.min.js"  charset="utf-8"></script>
+   <script src="/css/c3.js"></script>
+	
+   
 
     <!-- GOOGLE FONT -->
     <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
@@ -29,10 +39,13 @@
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    
+    <!-- custom angular -->
+	<script type="text/javascript" src="angularjs/mainCtrl.js"> </script>
 
   </head>
 
-  <body>
+  <body ng-app="risingInternational" ng-controller="mainPageCtrl">
 
     <div class="main-wrapper">
 
@@ -188,12 +201,12 @@
                 <li class="dropdown active">
                   <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My Account</a>
                   <ul class="dropdown-menu dropdown-menu-right">
-                    <li><a href="account-dashboard.html">Dashboard</a></li>
-                    <li class="active"><a href="account-profile.html">Profile</a></li>
-                    <li><a href="account-all-orders.html">All Orders</a></li>
-                    <li><a href="account-single-order.html">Single Order</a></li>
-                    <li><a href="account-wishlist.html">Wishlist</a></li>
-                    <li><a href="account-address.html">Address</a></li>
+                  <li><a href="" ng-click="dashboard()">Dashboard</a></li>
+                  <li class="active"><a href="" ng-click="profile()">Profile</a></li>
+                  <li><a href="" ng-click="leads()">My Leads</a></li>
+                  <li><a href="" ng-click="orders()">My Orders</a></li>
+                  <li><a href="" ng-click="accomplishments()">My Accomplishments</a></li>
+                
                   </ul>
                 </li>
               </ul>
@@ -230,12 +243,12 @@
           <div class="row">
             <div class="col-xs-12">
               <div class="btn-group" role="group" aria-label="...">
-                <a href="account-dashboard.html" class="btn btn-default"><i class="fa fa-th" aria-hidden="true"></i>Account Dashboard</a>
-                <a href="account-profile.html" class="btn btn-default active"><i class="fa fa-user" aria-hidden="true"></i>Profile</a>
-                <a href="account-address.html" class="btn btn-default"><i class="fa fa-map-marker" aria-hidden="true"></i>My Address</a>
-                <a href="account-all-orders.html" class="btn btn-default"><i class="fa fa-list" aria-hidden="true"></i>All Orders</a>
-                <a href="account-wishlist.html" class="btn btn-default"><i class="fa fa-gift" aria-hidden="true"></i>Wishlist</a>
-              </div>
+              <a href="" ng-click="dashboard()" class="btn btn-default"><i class="fa fa-th" aria-hidden="true"></i>Account Dashboard</a>
+              <a href="" ng-click="profile()"  class="btn btn-default active"><i class="fa fa-user" aria-hidden="true"></i>Profile</a>
+              <a href="" ng-click="leads()" class="btn btn-default"><i class="fa fa-map-marker" aria-hidden="true"></i>My Leads</a>
+              <a href="" ng-click="orders()" class="btn btn-default"><i class="fa fa-list" aria-hidden="true"></i>My Orders</a>
+              <a href="" ng-click="accomplishments()" class="btn btn-default"><i class="fa fa-gift" aria-hidden="true"></i>My Accomplishments</a>
+           </div>
             </div>
           </div>
           <div class="row">
@@ -256,13 +269,7 @@
                   <div class="col-md-10 col-sm-9 col-xs-12">
                       <form class="form-horizontal">
                         <div class="form-group">
-                          <label for="" class="col-md-2 col-sm-3 control-label">First Name</label>
-                          <div class="col-md-10 col-sm-9">
-                            <input type="text" class="form-control" id="" placeholder="">
-                          </div>
-                        </div>
-                        <div class="form-group">
-                          <label for="" class="col-md-2 col-sm-3 control-label">Last Name</label>
+                          <label for="" class="col-md-2 col-sm-3 control-label">Full Name</label>
                           <div class="col-md-10 col-sm-9">
                             <input type="text" class="form-control" id="" placeholder="">
                           </div>
@@ -280,17 +287,22 @@
                           </div>
                         </div>
                         <div class="form-group">
-                          <label for="" class="col-md-2 col-sm-3 control-label">Password</label>
+                          <label for="" class="col-md-2 col-sm-3 control-label">Address</label>
                           <div class="col-md-10 col-sm-9">
-                            <input type="password" class="form-control" id="" placeholder="">
+                            <input type="text" class="form-control" id="" placeholder="">
                           </div>
                         </div>
                         <div class="form-group">
-                          <label for="" class="col-md-2 col-sm-3 control-label">New Password</label>
+                          <label for="" class="col-md-2 col-sm-3 control-label">Life Story</label>
                           <div class="col-md-10 col-sm-9">
-                            <input type="password" class="form-control" id="" placeholder="">
+                            <input type="text" class="form-control" id="" placeholder="">
                           </div>
                         </div>
+                        <div class="form-group">
+                        <label for="" class="col-md-2 col-sm-3 control-label">Dream</label>
+                        <div class="col-md-10 col-sm-9">
+                        <input type="text" class="form-control" id="" placeholder="">                        </div>
+                      </div>
                         <div class="form-group">
                           <div class="col-md-offset-10 col-md-2 col-sm-offset-9 col-sm-3">
                             <button type="submit" class="btn btn-primary btn-block">SAVE INFO</button>

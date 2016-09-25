@@ -6,7 +6,6 @@
 var express = require('express')
   , routes = require('./routes')
   , home = require('./routes/home')
-  , user = require('./routes/user')
   , http = require('http')
   , path = require('path');
 
@@ -33,9 +32,8 @@ app.get('/account-dashboard', home.dashboard);
 app.get('/account-profile', home.profile);
 app.get('/account-orders', home.orders);
 app.get('/account-single-order', home.singleOrder);
-app.get('/account-wishlist', home.wishList);
-app.get('/account-address', home.address);
-app.get('/users', user.list);
+app.get('/account-accomplishments', home.accomplishments);
+app.get('/account-leads', home.leads);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

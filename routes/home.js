@@ -7,8 +7,8 @@ exports.dashboard= dashboard;
 exports.profile= profile;
 exports.orders= orders;
 exports.singleOrder= singleOrder;
-exports.wishList= wishList;
-exports.address= address;
+exports.accomplishments= accomplishments;
+exports.leads= leads;
 
 
 function dashboard(req,res) {
@@ -25,9 +25,9 @@ function orders(req,res) {
 function singleOrder(req,res) {
 	res.render("account-single-order");
 }
-function wishList(req,res) {
-	res.render("account-wishlist");
+function accomplishments(req,res) {
+	res.render("account-accomplishments");
 }
-function address(req,res) {
-	res.render("account-address");
+function leads(req,res) {
+	res.render("account-leads");
 }

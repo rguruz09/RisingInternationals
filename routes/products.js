@@ -31,7 +31,6 @@ function getProduct(req,res) {
 
 
 function getAllProduct(req,res) {
-
 	
 	var query ="select * from products;" ; 
 	console.log(query);

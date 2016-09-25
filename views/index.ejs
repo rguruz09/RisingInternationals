@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+<script src='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.js'></script>
+<link href='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.css' rel='stylesheet' />
 
     <!-- SITE TITTLE -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Rising International- Ecommerce Web app</title>
+    <title>Rising International</title>
     
     <!-- PLUGINS CSS STYLE -->
     <link href="plugins/jquery-ui/jquery-ui.css" rel="stylesheet">
@@ -76,26 +79,7 @@
                     <a href="cart-page.html" class="dropdown-toggle" data-toggle="dropdown disabled"><i class="fa fa-shopping-cart"></i>$0</a>
                     <ul class="dropdown-menu dropdown-menu-right">
                       <li>Item(s) in your cart</li>
-                      <li>
-                        <a href="single-product.html">
-                          <div class="media">
-                            <img class="media-left media-object" src="img/home/cart-items/cart-item-01.jpg" alt="cart-Image">
-                            <div class="media-body">
-                              <h5 class="media-heading">INCIDIDUNT UT <br><span>2 X $199</span></h5>
-                            </div>
-                          </div>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="single-product.html">
-                          <div class="media">
-                            <img class="media-left media-object" src="img/home/cart-items/cart-item-01.jpg" alt="cart-Image">
-                            <div class="media-body">
-                              <h5 class="media-heading">INCIDIDUNT UT <br><span>2 X $199</span></h5>
-                            </div>
-                          </div>
-                        </a>
-                      </li>
+                   
                       <li>
                         <div class="btn-group" role="group" aria-label="...">
                           <button type="button" class="btn btn-default" onclick="location.href='cart-page.html';">Shopping Cart</button>
@@ -133,22 +117,24 @@
                   <ul class="dropdown-menu row">
                     <li class="col-sm-3 col-xs-12">
                       <ul class="list-unstyled">
-                        <li>Products Grid View</li>
-                        <li><a href="product-grid-left-sidebar.html">Products Sidebar Left</a></li>
-                        <li><a href="product-grid-right-sidebar.html">Products Sidebar Right</a></li>
-                        <li><a href="product-grid-3-col-filter.html">Products 3 Columns V1</a></li>
-                        <li><a href="product-grid-3-col.html">Products 3 Columns V2</a></li>
-                        <li><a href="product-grid-4-col.html">Products 4 Columns</a></li>
+                        <li>Products</li>
+                        <li class="active"><a href="product-grid-left-sidebar.html">Accessories</a></li>
+                        <li><a href="product-grid-right-sidebar.html">Apparel</a></li>
+                        <li><a href="product-grid-3-col-filter.html">Kids</a></li>
+                        <li><a href="product-grid-3-col.html">Houseware</a></li>
+                        <li><a href="product-grid-4-col.html">Jewelry</a></li>
+                         <li><a href="product-grid-4-col.html">Pets</a></li> 
                       </ul>
                     </li>
                     <li class="col-sm-3 col-xs-12">
                       <ul class="list-unstyled">
-                        <li>Products List View</li>
-                        <li><a href="product-list-left-sidebar.html">Products Sidebar Left</a></li>
-                        <li><a href="product-list-right-sidebar.html">Products Sidebar Right</a></li>
-                        <li class="listHeading">Others</li>
-                        <li><a href="single-product.html">Single Product</a></li>
-                        <li><a href="cart-page.html">Cart Page</a></li>
+                        <li>Featured Products</li>
+                        <li><a href="product-list-left-sidebar.html">Peninah Wrap Bracelet</a></li>
+                        <li><a href="product-list-right-sidebar.html">Stella Bag</a></li>
+                        <li><a href="product-list-right-sidebar.html">Heart Bag</a></li>
+                        <li><a href="single-product.html">Gathering Basket</a></li>
+                        <li><a href="cart-page.html">Wire Bicycle</a></li>
+                        <li><a href="cart-page.html">Rising Heart Beaded Dog Collar</a></li>
                       </ul>
                     </li>
                     <li class="col-sm-3 col-xs-12">
@@ -162,35 +148,11 @@
                       </ul>
                     </li>
                     <li class="col-sm-3 col-xs-12">
-                      <a href="#" class="menu-photo"><img src="img/menu-photo.jpg" alt="menu-img"></a>
+                      <a href="#" class="menu-photo"><img src="img/item.png" alt="menu-img"></a>
                     </li>
                   </ul>
                 </li>
-                <li class="dropdown">
-                  <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">pages</a>
-                  <ul class="dropdown-menu dropdown-menu-left">
-                    <li><a href="about-us.html">About Us</a></li>
-                    <li><a href="signup.html">Register</a></li>
-                    <li><a href="signup-login.html">Register or Login</a></li>
-                    <li><a href="login.html">Login</a></li>
-                    <li><a href="lost-password.html">Password Recovery</a></li>
-                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                    <li><a href="terms-and-conditions.html">Terms &amp; Conditions</a></li>
-                    <li><a href="404.html">404 Not Found</a></li>
-                    <li><a href="coming-soon.html">Coming Soon</a></li>
-                  </ul>
-                </li>
-                <li class="dropdown">
-                  <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">blog</a>
-                  <ul class="dropdown-menu dropdown-menu-right">
-                    <li><a href="blog-right-sidebar.html">Right Sidebar</a></li>
-                    <li><a href="blog-left-sidebar.html">Left Sidebar</a></li>
-                    <li><a href="blog-fullwidth.html">Full Width</a></li>
-                    <li><a href="blog-single-fullwidth.html">Single Post</a></li>
-                    <li><a href="blog-single-right-sidebar.html">Single Right Sidebar</a></li>
-                    <li><a href="blog-single-left-sidebar.html">Single Left Sidebar</a></li>
-                  </ul>
-                </li>
+                
                 <li class="dropdown">
                   <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My Account</a>
                   <ul class="dropdown-menu dropdown-menu-right">
@@ -235,7 +197,7 @@
                     data-start="2000"
                     data-easing="Back.easeInOut"
                     data-endspeed="300">
-                    Canvas Sneaker
+                    Stella Bag
                   </div>
 
                   <div class="tp-caption rs-caption-3 sft"
@@ -248,8 +210,8 @@
                     data-endeasing="Power1.easeIn"
                     data-captionhidden="off">
                     Exclusive to <br>
-                    BigBag <br>
-                    <small>Spring / Summer 2016</small>
+                    Rising International <br>
+                    
                   </div>
                   <div class="tp-caption rs-caption-4 sft"
                     data-hoffset="0"
@@ -284,7 +246,7 @@
                     data-start="2000"
                     data-easing="Back.easeInOut"
                     data-endspeed="300">
-                    Exclusive to BigBag
+                    Exclusive to Rising International
                   </div>
 
                   <div class="tp-caption rs-caption-3 sft captionCenterAlign"
@@ -296,7 +258,7 @@
                     data-endspeed="300"
                     data-endeasing="Power1.easeIn"
                     data-captionhidden="off">
-                    Canvas Sneaker
+                    Safe and sound bracelet
                   </div>
 
                   <div class="tp-caption rs-caption-4 sft captionCenterAlign"
@@ -334,7 +296,7 @@
                     data-start="2000"
                     data-easing="Back.easeInOut"
                     data-endspeed="300">
-                    Canvas Sneaker
+                    Hmong Cosmetic Bag
                   </div>
 
                   <div class="tp-caption rs-caption-3 sft"
@@ -348,8 +310,8 @@
                     data-endeasing="Power1.easeIn"
                     data-captionhidden="off">
                     Exclusive to <br>
-                    BigBag <br>
-                    <small>Spring / Summer 2016</small>
+                    Rising International<br>
+<!--                    <small>Spring / Summer 2016</small>-->
                   </div>
 
                   <div class="tp-caption rs-caption-4 sft"
@@ -381,35 +343,68 @@
               </div>
             </div>
             <div class="col-sm-4 col-xs-12">
-              <div class="thumbnail" onclick="location.href='single-product.html';">
+              <div class="thumbnail">
                 <div class="imageWrapper">
-                  <img src="img/home/featured-collection/featured-collection-01.jpg" alt="feature-collection-image">
-                  <div class="masking"><a href="product-grid-left-sidebar.html" class="btn viewBtn">View Prodocts</a></div>
+                  <img src="img/home/featured-collection/bags.jpg" width="300px" height="300px"  alt="feature-collection-image">
+                  <div class="masking"><a href="product-grid-left-sidebar.html" class="btn viewBtn">View Products</a></div>
                 </div>
                 <div class="caption">
-                  <h4>Shoes</h4>
+                  <h4>Accessories</h4>
                 </div>
               </div>
             </div>
             <div class="col-sm-4 col-xs-12">
-              <div class="thumbnail" onclick="location.href='single-product.html';">
+              <div class="thumbnail">
                 <div class="imageWrapper">
-                  <img src="img/home/featured-collection/featured-collection-02.jpg" alt="feature-collection-image">
-                  <div class="masking"><a href="product-grid-left-sidebar.html" class="btn viewBtn">View Prodocts</a></div>
+                  <img src="img/home/featured-collection/apparel.jpg" width="300px" height="300px" alt="feature-collection-image">
+                  <div class="masking"><a href="product-grid-left-sidebar.html" class="btn viewBtn">View Products</a></div>
                 </div>
                 <div class="caption">
-                  <h4>Bags</h4>
+                  <h4>Apparel</h4>
                 </div>
               </div>
             </div>
             <div class="col-sm-4 col-xs-12">
-              <div class="thumbnail" onclick="location.href='single-product.html';">
+              <div class="thumbnail">
                 <div class="imageWrapper">
-                  <img src="img/home/featured-collection/featured-collection-03.jpg" alt="feature-collection-image">
-                  <div class="masking"><a href="product-grid-left-sidebar.html" class="btn viewBtn">View Prodocts</a></div>
+                  <img src="img/home/featured-collection/kids.png" width="300px" height="300px" alt="feature-collection-image">
+                  <div class="masking"><a href="product-grid-left-sidebar.html" class="btn viewBtn">View Products</a></div>
                 </div>
                 <div class="caption">
-                  <h4>Glasses</h4>
+                  <h4>Kids</h4>
+                </div>
+              </div>
+            </div>
+              <div class="col-sm-4 col-xs-12">
+              <div class="thumbnail">
+                <div class="imageWrapper">
+                  <img src="img/home/featured-collection/house.jpg"width="300px" height="300px"  alt="feature-collection-image">
+                  <div class="masking"><a href="product-grid-left-sidebar.html" class="btn viewBtn">View Products</a></div>
+                </div>
+                <div class="caption">
+                  <h4>Housewares</h4>
+                </div>
+              </div>
+            </div>
+               <div class="col-sm-4 col-xs-12">
+              <div class="thumbnail">
+                <div class="imageWrapper">
+                  <img src="img/home/featured-collection/jewelry.jpg" width="300px" height="300px" alt="feature-collection-image">
+                  <div class="masking"><a href="product-grid-left-sidebar.html" class="btn viewBtn">View Products</a></div>
+                </div>
+                <div class="caption">
+                  <h4>Jewellery</h4>
+                </div>
+              </div>
+            </div>
+               <div class="col-sm-4 col-xs-12">
+              <div class="thumbnail">
+                <div class="imageWrapper">
+                  <img src="img/home/featured-collection/pets.jpeg"width="300px" height="300px"  alt="feature-collection-image">
+                  <div class="masking"><a href="product-grid-left-sidebar.html" class="btn viewBtn">View Products</a></div>
+                </div>
+                <div class="caption">
+                  <h4>Pets</h4>
                 </div>
               </div>
             </div>
@@ -417,14 +412,14 @@
           <div class="row featuredProducts">
             <div class="col-xs-12">
               <div class="page-header">
-                <h4>Featured Products</h4>
+                <h4>On Sale</h4>
               </div>
             </div>
             <div class="col-xs-12">
               <div class="owl-carousel featuredProductsSlider">
                 <div class="slide">
                   <div class="productImage clearfix">
-                    <img src="img/home/featured-product/product-01.jpg" alt="featured-product-img">
+                    <img src="img/home/featured-product/sale5.jpg" width="250px" height="250px" alt="featured-product-img">
                     <div class="productMasking">
                       <ul class="list-inline btn-group" role="group">
                         <li><a data-toggle="modal" href=".login-modal" class="btn btn-default"><i class="fa fa-heart"></i></a></li>
@@ -435,14 +430,15 @@
                   </div>
                   <div class="productCaption clearfix">
                     <a href="single-product.html">
-                      <h5>Mauris efficitur</h5>
+                      <h5>Friendship Basket</h5>
                     </a>
-                    <h3>$199</h3>
+                    <h2>$15.00</h2>
+                      <h3>Reg $45.00</h3>
                   </div>
                 </div>
                 <div class="slide">
                   <div class="productImage">
-                    <img src="img/home/featured-product/product-02.jpg" alt="featured-product-img">
+                    <img src="img/home/featured-product/sale1.jpg" width="250px" height="250px" alt="featured-product-img">
                     <div class="productMasking">
                       <ul class="list-inline btn-group" role="group">
                         <li><a data-toggle="modal" href=".login-modal" class="btn btn-default"><i class="fa fa-heart"></i></a></li>
@@ -453,14 +449,16 @@
                   </div>
                   <div class="productCaption">
                     <a href="single-product.html">
-                      <h5>Nulla facilisi</h5>
+                      <h5>Safe & Sound Bracelet</h5>
+                        <h6>Black/Silver</h6>
                     </a>
-                    <h3>$149</h3>
+                    <h2>$35.00</h2>
+                      <h3>Reg $45.00</h3>
                   </div>
                 </div>
                 <div class="slide">
                   <div class="productImage">
-                    <img src="img/home/featured-product/product-03.jpg" alt="featured-product-img">
+                    <img src="img/home/featured-product/sale2.jpg" width="250px" height="250px" alt="featured-product-img">
                     <div class="productMasking">
                       <ul class="list-inline btn-group" role="group">
                         <li><a data-toggle="modal" href=".login-modal" class="btn btn-default"><i class="fa fa-heart"></i></a></li>
@@ -471,14 +469,16 @@
                   </div>
                   <div class="productCaption">
                     <a href="single-product.html">
-                      <h5>Praesent dui felis</h5>
+                      <h5>Safe & Sound Bracelet</h5>
+                        <h6>Blue/Green</h6>
                     </a>
-                    <h3>$79</h3>
+                    <h2>$35.00</h2>
+                      <h3>Reg $45.00</h3>
                   </div>
                 </div>
                 <div class="slide">
                   <div class="productImage">
-                    <img src="img/home/featured-product/product-04.jpg" alt="featured-product-img">
+                    <img src="img/home/featured-product/sale3.jpg" width="250px" height="250px" alt="featured-product-img">
                     <div class="productMasking">
                       <ul class="list-inline btn-group" role="group">
                         <li><a data-toggle="modal" href=".login-modal" class="btn btn-default"><i class="fa fa-heart"></i></a></li>
@@ -489,14 +489,17 @@
                   </div>
                   <div class="productCaption">
                     <a href="single-product.html">
-                      <h5>Cras eu faucibus</h5>
+                      <h5>Safe & Sound Bracelet</h5>
+                         <h6>Black/Silver</h6>
                     </a>
-                    <h3>$109</h3>
+                   
+                      <h2>$35.00</h2>
+                      <h3>Reg $45.00</h3>
                   </div>
                 </div>
                 <div class="slide">
                   <div class="productImage">
-                    <img src="img/home/featured-product/product-05.jpg" alt="featured-product-img">
+                    <img src="img/home/featured-product/sale4.jpg" width="250px" height="250px" alt="featured-product-img">
                     <div class="productMasking">
                       <ul class="list-inline btn-group" role="group">
                         <li><a data-toggle="modal" href=".login-modal" class="btn btn-default"><i class="fa fa-heart"></i></a></li>
@@ -507,11 +510,14 @@
                   </div>
                   <div class="productCaption">
                     <a href="single-product.html">
-                      <h5>Mauris lobortis augue</h5>
+                      <h5>Safe & Sound Bracelet</h5>
+                        <h6>Black/Green</h6>
                     </a>
-                    <h3>$199</h3>
+                    <h2>$35.00</h2>
+                      <h3>Reg $45.00</h3>
                   </div>
                 </div>
+<!--
                 <div class="slide">
                   <div class="productImage">
                     <img src="img/home/featured-product/product-06.jpg" alt="featured-product-img">
@@ -530,6 +536,8 @@
                    <h3>$149</h3>
                   </div>
                 </div>
+-->
+<!--
                 <div class="slide">
                   <div class="productImage">
                     <img src="img/home/featured-product/product-07.jpg" alt="featured-product-img">
@@ -548,6 +556,8 @@
                     <h3>$79</h3>
                   </div>
                 </div>
+-->
+<!--
                 <div class="slide">
                   <div class="productImage">
                     <img src="img/home/featured-product/product-09.jpg" alt="featured-product-img">
@@ -566,15 +576,22 @@
                     <h3>$109</h3>
                   </div>
                 </div>
+-->
               </div>
             </div>  
           </div>
-          <div class="row latestArticles">
+            
+            
+          
+
+<div class="row latestArticles">
+    
             <div class="col-xs-12">
               <div class="page-header">
-                <h4>Latest Articles</h4>
+                <h4>Locations</h4>
               </div>
             </div>
+<!--
             <div class="col-sm-3 col-xs-12">
               <div class="thumbnail">
                 <h5><a href="blog-single-right-sidebar.html">Donec egestas tortor quis mattis</a></h5>
@@ -584,7 +601,10 @@
                   <p>Nulla facilisi. Mauris efficitur, massa et iaculis accumsan, mauris velit ultrices purus, quis condimentum nibh dolor ut tortor.</p>
                 </div>
               </div>
+               
             </div>
+-->
+<!--
             <div class="col-sm-3 col-xs-12">
               <div class="thumbnail">
                 <h5><a href="blog-single-right-sidebar.html">Pellentesque risus quis tellus</a></h5>
@@ -595,6 +615,8 @@
                 </div>
               </div>
             </div>
+-->
+<!--
             <div class="col-sm-3 col-xs-12">
               <div class="thumbnail">
                 <h5><a href="blog-single-right-sidebar.html">Mauris lobortis augue ex</a></h5>
@@ -605,6 +627,8 @@
                 </div>
               </div>
             </div>
+-->
+<!--
             <div class="col-sm-3 col-xs-12">
               <div class="thumbnail">
                 <h5><a href="blog-single-right-sidebar.html">Suspendisse vestibulum dignissim</a></h5>
@@ -615,67 +639,85 @@
                 </div>
               </div>
             </div>
+-->
+    <div id='map'></div>
+    <style>
+  body { margin:0; padding:0; }
+  #map { height: 500px;
+    width: 1000px;
+    left: 65px;
+    top: -1px; }
+</style>
+<script>
+L.mapbox.accessToken = 'pk.eyJ1Ijoic2FuamVlZGhhOTEiLCJhIjoiY2luZGx4aGp1MHgydHVva3FnNTJjZWE0aSJ9.r1Ko3FaTUse9WZartLO7kQ';
+var map = L.mapbox.map('map', 'sanjeedha91.1g0e8fej');
+</script>
           </div>
         </div>
       </section>
 
       <!-- LIGHT SECTION -->
       <section class="lightSection clearfix">
-        <div class="container">
-          <div class="row">
-            <div class="col-xs-12">
-              <div class="owl-carousel partnersLogoSlider">
-                <div class="slide">
-                  <div class="partnersLogo clearfix">
-                    <img src="img/home/partners/partner-01.png" alt="partner-img">
-                  </div>
-                </div>  
-                <div class="slide">
-                  <div class="partnersLogo clearfix">
-                    <img src="img/home/partners/partner-02.png" alt="partner-img">
-                  </div>
+       <div id="tf-counter" class="text-center">
+                <div class="container">
+                    <div class="row"> <!-- Row -->
+
+                        <div class="counter"> 
+
+                          <div class="col-xs-6 col-sm-4 col-md-2 col-md-2 col-md-offset-1 facts"><!-- counter #1 -->
+                            <div class="count-box"> 
+                                <i class="fa fa-thumbs-up"></i>
+                                <h4 class="headerfour">720</h4>
+                                <p class="small">Happy Customers</p>
+                            </div> 
+                          </div><!-- end counter #1 -->
+
+                          <div class="col-xs-6 col-sm-4 col-md-2 facts"><!-- counter #2 -->
+                            <div class="count-box">
+                              <i class="fa fa-user"></i>
+                              <h4 class="headerfour">480</h4>
+                              <p class="small">People Donated</p>
+                            </div>
+                          </div>
+
+                          <div class="col-xs-6 col-sm-4 col-md-2 facts"> <!-- counter #3 -->
+                            <div class="count-box">
+                              <i class="fa fa-desktop"></i>
+                              <h4 class="headerfour">1253</h4>
+                              <p class="small">People Participated</p>
+                            </div>
+                          </div>
+
+                          <div class="col-xs-6 col-sm-4 col-md-2 facts"> <!-- counter #4 -->
+                            <div class="count-box">
+                              <i class="fa fa-dollar"></i>
+                              <h4 class="headerfour">4580</h4>
+                              <p class="small">Donation Collected</p>
+                            </div>
+                          </div>
+
+                          <div class="col-xs-6 col-sm-4 col-md-2 facts"> <!-- counter #5 -->
+                            <div class="count-box last">
+                              <i class="fa fa-line-chart"></i>
+                              <h4 class="headerfour">12853</h4>
+                              <p class="small">Total Hits</p>
+                            </div>
+                          </div>
+
+                        </div>
+
+                      </div> <!-- End Row -->
                 </div>
-                <div class="slide">
-                  <div class="partnersLogo clearfix">
-                    <img src="img/home/partners/partner-03.png" alt="partner-img">
-                  </div>
-                </div>
-                <div class="slide">
-                  <div class="partnersLogo clearfix">
-                    <img src="img/home/partners/partner-04.png" alt="partner-img">
-                  </div>
-                </div>
-                <div class="slide">
-                  <div class="partnersLogo clearfix">
-                    <img src="img/home/partners/partner-05.png" alt="partner-img">
-                  </div>
-                </div>
-                <div class="slide">
-                  <div class="partnersLogo clearfix">
-                    <img src="img/home/partners/partner-01.png" alt="partner-img">
-                  </div>
-                </div>  
-                <div class="slide">
-                  <div class="partnersLogo clearfix">
-                    <img src="img/home/partners/partner-02.png" alt="partner-img">
-                  </div>
-                </div>
-                <div class="slide">
-                  <div class="partnersLogo clearfix">
-                    <img src="img/home/partners/partner-03.png" alt="partner-img">
-                  </div>
-                </div>
-              </div>              
             </div>
-          </div>
-        </div>
+
       </section>
 
       <!-- FOOTER -->
       <div class="footer clearfix">
         <div class="container">
           <div class="row">
-            <div class="col-sm-2 col-xs-12">
+<!--            <div class="col-sm-2 col-xs-12">-->
+<!--
               <div class="footerLink">
                 <h5>Accessories</h5>
                 <ul class="list-unstyled">
@@ -687,7 +729,9 @@
                   <li><a href="#">Toilette </a></li>
                 </ul>
               </div>
-            </div>
+-->
+<!--            </div>-->
+<!--
             <div class="col-sm-2 col-xs-12">
               <div class="footerLink">
                 <h5>BRANDS</h5>
@@ -699,7 +743,9 @@
                 </ul>
               </div>
             </div>
-            <div class="col-sm-2 col-xs-12">
+-->
+<!--            <div class="col-sm-2 col-xs-12">-->
+<!--
               <div class="footerLink">
                 <h5>Accessories</h5>
                 <ul class="list-unstyled">
@@ -711,7 +757,8 @@
                   <li><a href="#">Toilette </a></li>
                 </ul>
               </div>
-            </div>
+-->
+<!--            </div>-->
             <div class="col-sm-2 col-xs-12">
               <div class="footerLink">
                 <h5>Get in Touch</h5>
@@ -740,9 +787,10 @@
         <div class="container">
           <div class="row">
             <div class="col-sm-7 col-xs-12">
-              <p>&copy; 2016 Copyright Bigbag Store Bootstrap Template by <a target="_blank" href="http://www.iamabdus.com/">Abdus</a>.</p>
+<!--              <p>&copy; 2016 Copyright Bigbag Store Bootstrap Template by <a target="_blank" href="http://www.iamabdus.com/">Abdus</a>.</p>-->
             </div>
             <div class="col-sm-5 col-xs-12">
+<!--
               <ul class="list-inline">
                 <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -750,11 +798,12 @@
                 <li><a href="#"><i class="fa fa-vimeo"></i></a></li>
                 <li><a href="#"><i class="fa fa-tumblr"></i></a></li>
               </ul>  
+-->
             </div>
           </div>
         </div>
       </div>
-    </div>
+<!--    </div>-->
     
     <!-- LOGIN MODAL -->
     <div class="modal fade login-modal" id="login" tabindex="-1" role="dialog">
@@ -817,6 +866,7 @@
     </div>
 
     <!-- PORDUCT QUICK VIEW MODAL -->
+<!--
     <div class="modal fade quick-view" tabindex="-1" role="dialog">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -855,6 +905,7 @@
         </div>
       </div>
     </div>
+-->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="plugins/jquery-ui/jquery-ui.js"></script>
@@ -865,6 +916,16 @@
     <script src="plugins/selectbox/jquery.selectbox-0.1.3.min.js"></script>
     <script src="plugins/countdown/jquery.syotimer.js"></script>
     <script src="js/custom.js"></script>
-
+<!-- Start of LiveChat (www.livechatinc.com) code -->
+<script type="text/javascript">
+window.__lc = window.__lc || {};
+window.__lc.license = 8258331;
+(function() {
+  var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
+  lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
+})();
+</script>
+<!-- End of LiveChat code -->
   </body>
 </html>

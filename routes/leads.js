@@ -8,7 +8,8 @@ exports.insertLeads=insertLeads;
 function getLeadsBySeller(req,res) {
 
 	var sid = req.param("sid");
-	var query ="select * from leadsinfo where sid = "+ sid + ";" ; 
+	//var query ="select * from leadsinfo where sid = "+ sid + ";" ; 
+	var query ="select * from leadsinfo" ; 
 	console.log(query);
 	mysql.fetchData(function(err, results) {
 		if(err){ 
@@ -18,6 +19,7 @@ function getLeadsBySeller(req,res) {
 		}
 		else{
 				console.log("query done");
+				console.log(JSON.stringify(results));
 				//callback(err,results);
 				res.json({
 					"stscode" : 200,

@@ -40,11 +40,11 @@
     <![endif]-->
     
     <!-- custom angular -->
-	<script type="text/javascript" src="angularjs/mainCtrl.js"> </script>
+	<script type="text/javascript" src="angularjs/orderCtrl.js"> </script>
 
   </head>
 
-  <body ng-app="risingInternational" ng-controller="mainPageCtrl">
+  <body ng-app="risingInternational" ng-controller="orderPageCtrl" ng-init="getOrdersBySeller()">
 
     <div class="main-wrapper">
 
@@ -261,53 +261,20 @@
                         <tr>
                           <th>Order ID</th>
                           <th>Date</th>
-                          <th>Items</th>
+                          <th>Quantity</th>
                           <th>Total Price</th>
                           <th>Status</th>
-                          <th></th>
                         </tr>
                       </thead>
                       <tbody>
-                        <tr>
-                          <td>#451231</td>
-                          <td>Mar 25, 2016</td>
-                          <td>2</td>
-                          <td>$99.00</td>
-                          <td><span class="label label-primary">Processing</span></td>
-                          <td><a href="#" class="btn btn-default">View</a></td>
+                        <tr ng-repeat="order in results">
+                          <td>{{order.oid}}</td>
+                          <td>{{order.odatetime}}</td>
+                          <td>{{order.qty}}</td>
+                          <td>{{order.amount}}</td>
+                          <td><span class="label label-primary">{{order.ostatus}}</span></td>
                         </tr>
-                        <tr>
-                          <td>#451231</td>
-                          <td>Mar 25, 2016</td>
-                          <td>3</td>
-                          <td>$150.00</td>
-                          <td><span class="label label-success">Completed</span></td>
-                          <td><a href="#" class="btn btn-default">View</a></td>
-                        </tr>
-                        <tr>
-                          <td>#451231</td>
-                          <td>Mar 25, 2016</td>
-                          <td>3</td>
-                          <td>$150.00</td>
-                          <td><span class="label label-danger">Canceled</span></td>
-                          <td><a href="#" class="btn btn-default">View</a></td>
-                        </tr>
-                        <tr>
-                          <td>#451231</td>
-                          <td>Mar 25, 2016</td>
-                          <td>2</td>
-                          <td>$99.00</td>
-                          <td><span class="label label-info">On Hold</span></td>
-                          <td><a href="#" class="btn btn-default">View</a></td>
-                        </tr>
-                        <tr>
-                          <td>#451231</td>
-                          <td>Mar 25, 2016</td>
-                          <td>3</td>
-                          <td>$150.00</td>
-                          <td><span class="label label-warning">Pending</span></td>
-                          <td><a href="#" class="btn btn-default">View</a></td>
-                        </tr>
+                      
                       </tbody>
                     </table>
                   </div>
@@ -387,7 +354,7 @@
         <div class="container">
           <div class="row">
             <div class="col-sm-7 col-xs-12">
-              <p>&copy; 2016 Copyright Bigbag Store Bootstrap Template by <a target="_blank" href="http://www.iamabdus.com/">Abdus</a>.</p>
+              <p>&copy; 2016 RisingStar</p>
             </div>
             <div class="col-sm-5 col-xs-12">
               <ul class="list-inline">

@@ -40,11 +40,11 @@
     <![endif]-->
     
     <!-- custom angular -->
-	<script type="text/javascript" src="angularjs/mainCtrl.js"> </script>
+	<script type="text/javascript" src="angularjs/leadCtrl.js"> </script>
 
   </head>
 
-  <body ng-app="risingInternational" ng-controller="mainPageCtrl">
+  <body ng-app="risingInternational" ng-controller="leadPageCtrl" ng-init="getLeadsBySeller()">
 
     <div class="main-wrapper">
 
@@ -253,20 +253,18 @@
                       <thead>
                         <tr>
                           <th>Name</th>
-                          <th>Email</th>
+                          <th>Address</th>
                           <th>Contact Number</th>
                           <th>Date</th>
-                          <th class="col-md-2 col-sm-3">Phone</th>
                           <th></th>
                         </tr>
                       </thead>
                       <tbody>
-                        <tr>
-                          <td>Nokia</td>
-                          <td>Adam Smith</td>
-                          <td>9/4 C Babor Road, Mohammad Pur, Dhaka</td>
-                          <td>Bangladesh</td>
-                          <td>+884 5452 6452</td>
+                        <tr  ng-repeat="lead in results">
+                          <td>{{lead.contactname}}</td>
+                          <td>{{lead.address}}</td>
+                          <td>{{lead.contactnum}}</td>
+                          <td>{{lead.ldatetime}}</td>
                           <td>
                             <div class="btn-group" role="group">
                               <button type="button" class="btn btn-default"><i class="fa fa-pencil" aria-hidden="true"></i></button>
@@ -274,32 +272,7 @@
                             </div>
                           </td>
                         </tr>
-                        <tr>
-                          <td>Samsung</td>
-                          <td>Adam Smith</td>
-                          <td>9/4 C Babor Road, Mohammad Pur, Dhaka</td>
-                          <td>Bangladesh</td>
-                          <td>+884 5452 6452</td>
-                          <td>
-                            <div class="btn-group" role="group">
-                              <button type="button" class="btn btn-default"><i class="fa fa-pencil" aria-hidden="true"></i></button>
-                              <button type="button" class="btn btn-default"><i class="fa fa-times" aria-hidden="true"></i></button>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>Motorola</td>
-                          <td>Adam Smith</td>
-                          <td>9/4 C Babor Road, Mohammad Pur, Dhaka</td>
-                          <td>Bangladesh</td>
-                          <td>+884 5452 6452</td>
-                          <td>
-                            <div class="btn-group" role="group">
-                              <button type="button" class="btn btn-default"><i class="fa fa-pencil" aria-hidden="true"></i></button>
-                              <button type="button" class="btn btn-default"><i class="fa fa-times" aria-hidden="true"></i></button>
-                            </div>
-                          </td>
-                        </tr>
+                           
                       </tbody>
                     </table>
                   </div>

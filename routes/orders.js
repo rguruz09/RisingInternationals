@@ -13,7 +13,8 @@ function cart_page(req,res){
 function getOrdersBySeller(req,res) {
 
 	var sid = req.param("sid");
-	var query ="select * from salesinfo where sid = "+ sid + ";" ; 
+	//var query ="select * from salesinfo where sid = "+ sid + ";" ; 
+	var query ="select * from salesinfo where sid;" ; 
 	console.log(query);
 	mysql.fetchData(function(err, results) {
 		if(err){ 

@@ -3,6 +3,8 @@
  */
 
 var risingInternational= angular.module('risingInternational',[]);
+
+
 risingInternational.controller('mainPageCtrl', function($scope, $http, $location) {
 	 
 	$scope.category = 0;
@@ -56,6 +58,8 @@ risingInternational.controller('mainPageCtrl', function($scope, $http, $location
 	//return(resp)
 	};
 	 
+	 
+
 	 $scope.productgridleftsidebar = function(category){
 	 	$scope.category = category;
 		console.log("inside accomplishments ctrl");
@@ -266,9 +270,13 @@ risingInternational.controller('mainPageCtrl', function($scope, $http, $location
 		    	       data: {
 		    	         //url: '/angularjs/masterdata.json',
 		    	    	  columns: [
-		    	    	 ['az',45],
-		    	    	 ['sd',42],
-		    	    	 ['dw',32]
+		    	    	 ['Accessories',45],
+		    	    	 ['Apparel',30],
+		    	    	 ['Kids',20],
+		    	    	 ['Housewares',15],
+		    	    	 ['Jewelry',10],
+		    	    	 ['Pets',20],
+		    	    	 ['Onsale',20]
 		    	    	   ],
 		    	         //mimeType: 'json',
 		    	         type : 'donut',
@@ -290,7 +298,7 @@ risingInternational.controller('mainPageCtrl', function($scope, $http, $location
 		    	         label: {
 //		    	            format: function (d, ratio) { return ""; }
 		    	         },
-		    	         title: "Sales by Quarter - Master",
+		    	         title: "Sales Analytics",
 		    	 width: 70
 		    	       },
 		    	size: {
@@ -348,13 +356,13 @@ risingInternational.controller('mainPageCtrl', function($scope, $http, $location
 			var makeChart = function(selector, type, colors, legend)
 		    {
 			c3.generate({
-			    bindto: selector,
+				bindto: selector,
 			    data: {
 				x: 'x',
 				//        xFormat: '%Y%m%d', // 'xFormat' can be used as custom format of 'x'
 				columns: [
-				    ['x', '2013-01-01', '2013-01-02', '2013-01-03', '2013-01-04', '2013-01-05', '2013-01-06',
-				     '2013-01-07', '2013-01-08', '2013-01-09', '2013-01-10', '2013-01-11', '2013-01-12'],
+				    ['x', '2016-01-01', '2016-01-02', '2016-01-03', '2016-01-04', '2016-01-05', '2016-01-06',
+				     '2016-01-07', '2016-01-08', '2016-01-09', '2016-01-10', '2016-01-11', '2016-01-12'],
 				    ['Et quoniam inedia', 30, 200, 100, 400, 150, 250, 30, 200, 112, 322, 70, 300]
 				],
 				//type: 'spline'

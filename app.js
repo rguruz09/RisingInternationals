@@ -41,6 +41,7 @@ app.get('/account-single-order', home.singleOrder);
 app.get('/account-accomplishments', home.accomplishments);
 app.get('/account-leads', home.leads);
 app.get('/users', user.list);
+app.get('/singleProductPage',seller.singleProductPage);
 app.get('/getSellerById', seller.getSellerById);
 app.get('/getLeadsBySeller',leads.getLeadsBySeller);
 app.post('/insertLeads',leads.insertLeads);

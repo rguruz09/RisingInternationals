@@ -2,6 +2,11 @@ var ejs = require("ejs");
 var mysql = require('./mysql');
 
 exports.getSellerById=getSellerById;
+exports.singleProductPage = singleProductPage;
+
+function singleProductPage(req,res) {
+	res.render("single-product");
+}
 
 
 function getSellerById(req,res) {

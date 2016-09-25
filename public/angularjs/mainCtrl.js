@@ -5,9 +5,47 @@
 var risingInternational= angular.module('risingInternational',[]);
 risingInternational.controller('mainPageCtrl', function($scope, $http, $location) {
 	 
+	$scope.category = 0;
+	$scope.product = [];
+	$scope.prod1 = 0;
 
+	$scope.singleProductPage = function(){
+
+		//$scope.prodid = prod;
+		window.location.assign("/single-product");
+	}
+
+	$scope.getProductList = function(){
+		//window.location.assign("/product-grid-left-sidebar");
+		
+	return $http({
+	method : 'GET',
+	url : '/getAllproduct'
+	}).success(function(result) {
+
+		if(result.stscode == 200){
+
+			var products = result.data;
+			console.log(products);
+				for(var i=0; i<products.length;i++){
+					$scope.product.push(products[i].productname+";"+products[i].amount+";"+products[i].profilepic+";"+products[i].productdesc+
+						";"+products[i].pid+";"+products[i].cid);	
+					//$scope.productAmount.push(products[i].amount);	
+					console.log($scope.product);
+					
+				}
+				
+			}
+			else {
+				console.log("No products");
+			}
+				
+		});
+	//return(resp)
+	};
 	 
-	 $scope.productgridleftsidebar = function(){
+	 $scope.productgridleftsidebar = function(category){
+	 	$scope.category = category;
 		console.log("inside accomplishments ctrl");
    	window.location.assign("/product-grid-left-sidebar");
 	 
@@ -344,4 +382,12 @@ risingInternational.controller('mainPageCtrl', function($scope, $http, $location
 	
 	
  });
+
+risingInternational.filter('split', function() {
+    return function(input, splitChar, splitIndex) {
+        // do some bounds checking here to ensure it has that index
+        return input.split(splitChar)[splitIndex];
+    };
+    
+});
 

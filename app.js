@@ -12,7 +12,7 @@ var express = require('express')
 var app = express();
 
 // all environments
-app.set('port', process.env.PORT || 3000);
+app.set('port', process.env.PORT || 3030);
 app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
 app.use(express.favicon());
@@ -34,7 +34,8 @@ app.get('/account-orders', home.orders);
 app.get('/account-single-order', home.singleOrder);
 app.get('/account-accomplishments', home.accomplishments);
 app.get('/account-leads', home.leads);
-
+app.get('/product-grid-left-sidebar', home.product_grid_left_sidebar);
+app.get('/aboutus', home.aboutus); 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
 });

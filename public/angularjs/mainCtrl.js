@@ -5,11 +5,23 @@
 var risingInternational= angular.module('risingInternational',[]);
 risingInternational.controller('mainPageCtrl', function($scope, $http, $location) {
 	 
+
+	 
+	 $scope.productgridleftsidebar = function(){
+		console.log("inside accomplishments ctrl");
+   	window.location.assign("/product-grid-left-sidebar");
+	 
+	 }
 	 $scope.dashboard = function(){
 		 console.log("inside Dashboard ctrl");
    	  window.location.assign("/account-dashboard");
 	 };
 	 
+	 $scope.aboutus = function(){
+	 	console.log("inside About Us ctrl");
+   	 	window.location.assign("/aboutus");
+	 };
+
 	 $scope.profile = function(){
 		 console.log("inside profile ctrl");
    	  window.location.assign("/account-profile");
@@ -31,8 +43,8 @@ risingInternational.controller('mainPageCtrl', function($scope, $http, $location
 		 console.log("inside Address ctrl");
    	  window.location.assign("/account-leads");
 	 };
-	 
-	 var agg = { label: 'Seller', pct: [30, 10, 6, 20, 14, 10, 10] },
+
+	 	var agg = { label: 'Seller', pct: [30, 10, 6, 20, 14, 10, 10] },
 	    bal = { label: 'Balanced',   pct: [24,  7, 2, 18, 13, 36, 5] },
 	    mod = { label: 'Moderate',  pct: [12,  4, 2, 10, 11, 61, 8] },
 	    inc = { label: 'Income',    pct: [ 0,  0, 0,  0,  0,100, 10] },

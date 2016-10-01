@@ -11,11 +11,53 @@ risingInternational.controller('mainPageCtrl', function($scope, $http, $location
 	$scope.product = [] ;
 	//$scope.prod1;
 
+
 	$scope.cart_page = function(){
 		console.log("cart page");
 		window.location.assign('/cart_page');
 	}
 
+	$scope.signup = function(){
+		console.log("inside signup page");
+		var firstname = $scope.firstname;
+		var lastname = $scope.lastname;
+		var email = $scope.email;
+		var phone = $scope.phone;
+		var profession = $scope.profession;
+		var organization = $scope.organization;
+		var skills = $scope.skills;
+		
+console.log("vol signup")
+
+		$http({
+			method:"post",
+			url:"/addVolunteers",
+			data:{
+				"firstname" : firstname,
+				"lastname": lastname,
+				"email": email,
+				"phone": phone,
+				"profession": profession,
+				"organization": organization,
+				"skills": skills
+			}
+		}).success(function(res){
+			if(res.stscode == 200){
+				console.log("values entered sucessfully");
+				window.location.assign("/thankyou");
+
+				
+			}
+			else{
+				console.log("cannot add the values");
+			}
+		}).error(function(res){
+			console.log("error while signup");
+			console.log(res);
+		});
+	}
+	
+	
 	$scope.singleProductPage = function(){
 
 		//$scope.prodid = prod;

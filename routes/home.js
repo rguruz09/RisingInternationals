@@ -2,6 +2,7 @@
  * @Shruti Kangokar
  */
 var ejs = require("ejs");
+var mysql = require('mysql');
 
 exports.dashboard= dashboard;
 exports.profile= profile;
@@ -13,6 +14,32 @@ exports.product_grid_left_sidebar = product_grid_left_sidebar;
 exports.aboutus= aboutus;
 exports.cart_page= cart_page;
 exports.volunteersSignup = volunteersSignup;
+exports.addVolunteers = addVolunteers;
+exports.thankyou = thankyou;
+
+function thankyou(req,res)
+{
+	res.render("thankyou");
+}
+function addVolunteers(req,res){
+	
+	var firstname = req.param("firstname");
+	var lastname = req.param("lastname");
+	var email = req.param("email");
+	var phone = req.param("phone");
+	var profession = req.param("profession");
+	var organization = req.param("organization");
+	var skills = req.param("skills");
+
+	//add MySQL code here 
+	
+	
+	
+	
+	
+	
+	
+}
 
 function product_grid_left_sidebar(req,res) {
 	res.render("product-grid-left-sidebar");

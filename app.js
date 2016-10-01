@@ -55,7 +55,9 @@ app.get('/getAllProduct', products.getAllProduct);
 app.get('/singleProduct',products.singleProduct);
 app.get('/cart_page',orders.cart_page);
 app.get('/volunteersSignup',home.volunteersSignup);
-app.post('/addVolunteers',home.addVolunteers);
+app.post('/addVolunteers',user.addVolunteers);
+app.get('/thankyou',home.thankyou);
+
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

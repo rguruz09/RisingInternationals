@@ -11,6 +11,7 @@ risingInternational.controller('mainPageCtrl', function($scope, $http, $location
 	$scope.product = [] ;
 	//$scope.prod1;
 
+
 	$scope.cart_page = function(){
 		console.log("cart page");
 		window.location.assign('/cart_page');
@@ -26,6 +27,8 @@ risingInternational.controller('mainPageCtrl', function($scope, $http, $location
 		var organization = $scope.organization;
 		var skills = $scope.skills;
 		
+console.log("vol signup")
+
 		$http({
 			method:"post",
 			url:"/addVolunteers",
@@ -41,6 +44,8 @@ risingInternational.controller('mainPageCtrl', function($scope, $http, $location
 		}).success(function(res){
 			if(res.stscode == 200){
 				console.log("values entered sucessfully");
+				window.location.assign("/thankyou");
+
 				
 			}
 			else{

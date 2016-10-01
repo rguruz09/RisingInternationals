@@ -15,7 +15,12 @@ exports.aboutus= aboutus;
 exports.cart_page= cart_page;
 exports.volunteersSignup = volunteersSignup;
 exports.addVolunteers = addVolunteers;
+exports.thankyou = thankyou;
 
+function thankyou(req,res)
+{
+	res.render("thankyou");
+}
 function addVolunteers(req,res){
 	
 	var firstname = req.param("firstname");

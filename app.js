@@ -50,7 +50,7 @@ app.get('/getAmountBySeller',orders.getAmountBySeller);
 app.get('/getProduct',products.getProduct);
 app.get('/getProductByQrCode',products.getProductByQrCode);
 app.get('/aboutus', home.aboutus); 
-app.get('/volunteersSignup', home.volunteersSignup); 
+app.get('/volunteersSignup', user.volunteersSignup); 
 app.get('/product-grid-left-sidebar', home.product_grid_left_sidebar);
 app.get('/getAllProduct', products.getAllProduct);
 app.get('/singleProduct',products.singleProduct);

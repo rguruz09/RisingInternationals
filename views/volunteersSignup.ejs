@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>About Us - Rising Internationals</title>
+    <title>Volunteer - Rising Internationals</title>
     
     <!-- PLUGINS CSS STYLE -->
     <link href="plugins/jquery-ui/jquery-ui.css" rel="stylesheet">
@@ -20,6 +20,9 @@
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="plugins/owl-carousel/owl.carousel.css" media="screen">
 
+<script src="http://d3js.org/d3.v3.min.js"  charset="utf-8"></script>
+   <script src="/css/c3.js"></script>
+   
     <!-- GOOGLE FONT -->
     <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
     
@@ -162,7 +165,7 @@
                   </ul>
                 </li>
                 <li class="dropdown active">
-                  <a href="about-us.html" >About Us</a>
+                  <a href="about-us.html" >Volunteer Signup</a>
 <!--                  <ul class="dropdown-menu dropdown-menu-left">-->
 <!--                    <li class="active"><a href="about-us.html">About Us</a></li>-->
 <!--
@@ -214,7 +217,7 @@
           <div class="row">
             <div class="col-xs-6">
               <div class="page-title">
-                <h2>About Us</h2>
+                <h2>Volunteer Signup</h2>
               </div>
             </div>
             <div class="col-xs-6">
@@ -222,7 +225,7 @@
                 <li>
                   <a href="\">Home</a>
                 </li>
-                <li class="active">About Us</li>
+                <li class="active">Volunteer Signup</li>
               </ol>
             </div>
           </div>
@@ -233,20 +236,68 @@
       <section class="mainContent clearfix aboutUsInfo">
         <div class="container">
           <div class="row">
-            <div class="col-xs-12">
-              <div class="page-header">
-                <h3>Volunteers Details</h3>
+            <div class="col-xs-11">
+              <!-- <div class="page-header"> -->
+                
+<form class="form-horizontal">
+					
+                        <div class="form-group">
+                          <label for="" class="col-md-2 col-sm-3 control-label">First Name</label>
+                          <div class="col-md-10 col-sm-9">
+                            <input type="text" class="form-control" id="" placeholder="" ng-model="firstname"/>
+                          </div>
+                        </div>
+                        
+                        <div class="form-group">
+                          <label for="" class="col-md-2 col-sm-3 control-label">Last Name</label>
+                          <div class="col-md-10 col-sm-9">
+                            <input type="text" class="form-control" id="" placeholder="" ng-model="lastname"/>
+                          </div>
+                        </div>
+                        
+                        <div class="form-group">
+                          <label for="" class="col-md-2 col-sm-3 control-label">Email Address</label>
+                          <div class="col-md-10 col-sm-9">
+                            <input type="email" class="form-control" id="" placeholder="" ng-model="email"/>
+                          </div>
+                        </div>
+                        
+                        <div class="form-group">
+                          <label for="" class="col-md-2 col-sm-3 control-label">Phone Number</label>
+                          <div class="col-md-10 col-sm-9">
+                            <input type="text" class="form-control" id="" placeholder="" ng-model="phone"/>
+                          </div>
+                        </div>
+                        
+                        <div class="form-group">
+                          <label for="" class="col-md-2 col-sm-3 control-label"> Profession </label>
+                          <div class="col-md-10 col-sm-9">
+                          	<input type="text" class="form-control" id="" placeholder="" ng-model="profession"/>
+                          </div>
+                        </div>
+                        
+                        <div class="form-group">
+                          <label for="" class="col-md-2 col-sm-3 control-label">Organization</label>
+                          <div class="col-md-10 col-sm-9">
+                            <input type="text" class="form-control" id="" placeholder="" ng-model="organization"/> 
+                          </div>
+                        </div>
+                        <div class="form-group">
+                        <label for="" class="col-md-2 col-sm-3 control-label">Skillset</label>
+                        <div class="col-md-10 col-sm-9">
+                        <textarea style="height:80px" class="form-control" placeholder="" ng-model="skills"></textarea>
+                       	</div> 
+                      </div>
+                        <div class="form-group">
+                          <div class="col-md-offset-10 col-md-2 col-sm-offset-9 col-sm-3">
+                            <button type="submit" class="btn btn-primary btn-block" ng-click="signup()">SIGNUP</button>
+                          </div>
+                        </div>
+                      </form>
 
                 
-              </div>
-            </div>
-            <div class="col-sm-6 col-sm-push-6 col-xs-12">
-
-                
-                
-            </div>
-            <div class="col-sm-6 col-sm-pull-6 col-xs-12">
-
+              <!-- </div> -->
+          
 
             </div>
               

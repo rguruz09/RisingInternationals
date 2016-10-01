@@ -145,7 +145,7 @@ risingInternational.controller('mainPageCtrl', function($scope, $http, $location
 	var arcs = arc_grp.selectAll("path")
 	    .data(donut(data.pct));
 	arcs.enter().append("svg:path")
-	    .attr("stroke", "white")
+	    .attr("stroke", "red")
 	    .attr("stroke-width", 0.5)
 	    .attr("fill", function(d, i) {return color(i);})
 	    .attr("d", arc)
@@ -347,14 +347,15 @@ risingInternational.controller('mainPageCtrl', function($scope, $http, $location
 			});
 		    };
 		    
-			makeGauge('#accessories', 42, '#1abc9c');
-			makeGauge('#apparels', 30, '#3498db');
-			makeGauge('#kids', 72, '#f39c12');
-			makeGauge('#housewares', 42, '#1abc9c');
+			makeGauge('#accessories', 13, '#1abc9c');
+			makeGauge('#apparels', 8, '#3498db');
+			makeGauge('#kids', 20, '#f39c12');
+			makeGauge('#housewares', 17, '#1abc9c');
 			
 			
 			var makeChart = function(selector, type, colors, legend)
 		    {
+               
 			c3.generate({
 				bindto: selector,
 			    data: {
@@ -363,7 +364,7 @@ risingInternational.controller('mainPageCtrl', function($scope, $http, $location
 				columns: [
 				    ['x', '2016-01-01', '2016-01-02', '2016-01-03', '2016-01-04', '2016-01-05', '2016-01-06',
 				     '2016-01-07', '2016-01-08', '2016-01-09', '2016-01-10', '2016-01-11', '2016-01-12'],
-				    ['Et quoniam inedia', 30, 200, 100, 400, 150, 250, 30, 200, 112, 322, 70, 300]
+				    ['Monthly Earnings', 30, 200, 100, 400, 150, 250, 30, 200, 112, 322, 70, 300]
 				],
 				//type: 'spline'
 				type: type
@@ -395,8 +396,9 @@ risingInternational.controller('mainPageCtrl', function($scope, $http, $location
 			    }
 
 			});
+                 
 		    } 
-		
+		makeChart('#d1-c5', 'bar', ['#3498db', '#2980b9'], false);
 	
  });
 

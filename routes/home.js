@@ -12,6 +12,7 @@ exports.leads= leads;
 exports.product_grid_left_sidebar = product_grid_left_sidebar;
 exports.aboutus= aboutus;
 exports.cart_page= cart_page;
+exports.volunteersSignup = volunteersSignup;
 
 function product_grid_left_sidebar(req,res) {
 	res.render("product-grid-left-sidebar");
@@ -45,6 +46,9 @@ function leads(req,res) {
 
 function aboutus(req,res) {
 	res.render("about-us.ejs");
+}
+function volunteersSignup(req,res) {
+	res.render("volunteersSignup.ejs");
 }
 
 

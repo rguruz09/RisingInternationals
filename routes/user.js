@@ -10,7 +10,6 @@ exports.list = function(req, res){
 
 
 
-exports.volunteersSignup = function(req, res){
 
 exports.addVolunteers = function(req, res){
 	

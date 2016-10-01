@@ -76,6 +76,11 @@ risingInternational.controller('mainPageCtrl', function($scope, $http, $location
    	 	window.location.assign("/aboutus");
 	 };
 
+	  $scope.volunteersSignup = function(){
+	 	console.log("inside Volunteers ctrl");
+   	 	window.location.assign("/volunteersSignup");
+	 };
+
 	 $scope.profile = function(){
 		 console.log("inside profile ctrl");
    	  window.location.assign("/account-profile");

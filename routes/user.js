@@ -13,13 +13,13 @@ exports.list = function(req, res){
 
 exports.addVolunteers = function(req, res){
 	
-	var fname = req.param("firstname");
-	var lname = req.param("lastname");
-	var email = req.param("email");
-	var phone = req.param("phone");
-	var profession = req.param("profession");
-	var organization = req.param("organization");
-	var skills = req.param("skills");
+	var fname = req.params("firstname");
+	var lname = req.params("lastname");
+	var email = req.params("email");
+	var phone = req.params("phone");
+	var profession = req.params("profession");
+	var organization = req.params("organization");
+	var skills = req.params("skills");
 
 
 	var query ="insert into volunteers(firstname,lastname ,email ,phone ,profession , organization , skillset ) values(\""+ 
